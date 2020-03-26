@@ -29,6 +29,7 @@ body {
 
 .button-container {
   margin-bottom: 1.8rem;
+  -webkit-transition: transform .2s ease;
   transition: transform .2s ease;
 }
 
@@ -37,26 +38,43 @@ body {
 }
 
 .button-container:active {
-  opacity: .7;
   transform: translate3d(0, 0, 0)
 }
 
-.google-button {
+.google-button, .logIn-button {
+  margin-bottom: 1.8rem;
   width: 20rem;
   height: 3rem;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #000;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: transform .2s ease;
+  transition: transform .2s ease;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0) scale(1.0, 1.0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.google-button:hover, .logIn-button:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.google-button:active, .logIn-button:active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.google-button {
+  background-color: white;
 }
 
 .logIn-button {
-  width: 20rem;
-  height: 3rem;
   background-color: black;
   color: white;
-  border: 3px solid #000;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
