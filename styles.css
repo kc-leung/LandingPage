@@ -5,12 +5,53 @@ body {
 
 .header {
   width: 100vw;
-  height: 3rem;
-  background-color: red;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
 }
 
 .main-container {
   width: 100vw;
-  height: 10rem;
-  background-color: blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
+
+.button-container {
+  margin-bottom: 1.8rem;
+  transition: top 2s;
+}
+
+.button-container:hover {
+  transform: translateY(-2px)
+}
+
+.google-button {
+  width: 20rem;
+  height: 3rem;
+  background-color: white;
+  border: 3px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logIn-button {
+  width: 20rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border: 3px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
