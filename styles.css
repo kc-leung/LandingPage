@@ -27,20 +27,6 @@ body {
   background-color: white;
 }
 
-.button-container {
-  margin-bottom: 1.8rem;
-  -webkit-transition: transform .2s ease;
-  transition: transform .2s ease;
-}
-
-.button-container:hover {
-  transform: translate3d(0, -3px, 0)
-}
-
-.button-container:active {
-  transform: translate3d(0, 0, 0)
-}
-
 .google-button, .logIn-button {
   margin-bottom: 1.8rem;
   width: 20rem;
