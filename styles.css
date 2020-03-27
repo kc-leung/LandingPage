@@ -19,7 +19,7 @@ body {
 
 .main-container {
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,24 +36,28 @@ body {
 
 .email, .password {
   width: 22rem;
-  height: 2.7rem;
+  height: 3rem;
   margin-bottom: 1.6rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  border: 3px solid #000;
-  border-radius: 5px; 
+  border: 3.5px solid #000;
+  border-radius: 7px; 
 }
 
 .logIn-button {
   width: 22rem;
-  height: 2.7rem;
+  height: 3rem;
   margin-bottom: 1.6rem;
   background-color: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: normal;
+  font-weight: 700;
   cursor: pointer;
-  border: 3px solid #000;
-  border-radius: 5px;
+  border: 3.5px solid #000;
+  border-radius: 7px;
   box-sizing: border-box;
   -webkit-transition: transform .2s ease;
   transition: transform .2s ease;
@@ -66,13 +70,16 @@ body {
 .google-button {
   margin-bottom: 1.6rem;
   width: 22rem;
-  height: 2.7rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 3px solid #000;
-  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: 3.5px solid #000;
+  border-radius: 7px;
   box-sizing: border-box;
   cursor: pointer;
   -webkit-transition: transform .2s ease;
@@ -81,6 +88,10 @@ body {
   transform: translateZ(0) scale(1.0, 1.0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.google-icon {
+  margin-right: .7rem;
 }
 
 .google-button:hover, .logIn-button:hover {
@@ -95,4 +106,10 @@ body {
 
 .or {
   margin-bottom: 1.6rem;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  letter-spacing: .5px;
+  font-size: 15.5px;
+  font-weight: 600;
 }
